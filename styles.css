@@ -114,7 +114,9 @@ button {
     padding: 14px;
     font-size: 14px;
     font-weight: 800;
-    white-space: nowrap
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .header-call:hover {
@@ -127,6 +129,11 @@ button {
     color: var(--yellow);
     margin-right: 10px;
     font-weight: 400;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .header-call:hover .call-icon {
@@ -241,16 +248,35 @@ p {
     line-height: .5
 }
 
+.phone-booking-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
 .text-link {
     font-size: 13px;
     font-weight: 800;
     border-bottom: 1px solid #858a7e;
-    padding-bottom: 8px
+    padding-bottom: 8px;
+    display:flex;
+    align-items: center;
 }
 
 .text-link span {
+    
+}
+
+.map-icon {
     margin-left: 9px;
-    color: var(--yellow)
+    color: var(--yellow);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .hero-facts {
@@ -603,13 +629,22 @@ p {
 .callout-action b {
     position: absolute;
     right: 0;
-    bottom: 28px;
+    bottom: 31px;
     font-size: 28px
 }
 
-.callout-action:hover b {
-    transform: translate(4px, -4px)
+.arrow-icon {
+    width: 28px;
+    height: 28px;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
+
+/* .callout-action:hover b {
+    transform: translate(4px, -4px)
+} */
 
 .location {
     background: #f3f2ed
