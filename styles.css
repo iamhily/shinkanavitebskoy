@@ -626,25 +626,21 @@ p {
     letter-spacing: -.05em
 }
 
-.callout-action b {
+.callout-action > .arrow-icon {
     position: absolute;
     right: 0;
     bottom: 31px;
-    font-size: 28px
+    width: 28px;
+    height: 28px
 }
 
 .arrow-icon {
-    width: 28px;
-    height: 28px;
-    color: #000;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     vertical-align: middle;
     flex-shrink: 0;
 }
-
-/* .callout-action:hover b {
-    transform: translate(4px, -4px)
-} */
 
 .location {
     background: #f3f2ed
@@ -727,6 +723,9 @@ p {
 }
 
 .location-links>a:not(.button) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 12px;
     font-weight: 800;
     border-bottom: 1px solid;
